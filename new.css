@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
 }
 .main{
     background-image: url('https://www.teahub.io/photos/full/213-2137769_dslr-camera-with-girl.jpg');
@@ -36,6 +36,7 @@ button:hover{
     overflow: hidden;
     width: 100%;
     height: 0;
+    background-size: contain;
     transition: .5s ease;
     border-radius: 1rem;
   }
@@ -52,11 +53,84 @@ button:hover{
   .text {
     white-space: nowrap; 
     color: black;
-    font-size: 20px;
+    font-size:15px;
     position: absolute;
     overflow: hidden;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+  }
+  .box-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .button {
+    border-color: #2FBDFC;
+  }
+
+  button:hover {
+    background-color: #2FBDFC;
+    color: white;
+  }
+
+  .btn1 {
+    background-color: white;
+    border: 1px solid #2FBDFC;
+    border-radius: 0.8rem;
+    color: #2FBDFC;
+    padding: 10px 20px;
+  }
+
+  .btn1:hover {
+    background-color: #2FBDFC;
+    color: white;
+    border: 1px solid white;
+  }
+
+  a {
+    color: white;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: #2FBDFC;
+
+  }
+
+  img {
+    border-radius: 1rem;
+    width: 100%;
+  }
+  .img{
+    border-radius: 0%;
+  }
+
+  .card-img-top {
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border: none;
+  }
+
+  .card {
+    border: none;
+    margin-right: 2rem;
+
+  }
+  .sec-4{
+    color:#2FBDFC;
+ 
+  }
+  .li{
+    text-decoration: line-through;
+    color:lightgray
+  }
+  @media screen and (max-width:500px) {
+    .main{
+       height: 90vh;
+    }
+
+    
   }
